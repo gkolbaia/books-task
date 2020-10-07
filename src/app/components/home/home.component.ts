@@ -33,4 +33,11 @@ export class HomeComponent implements OnInit {
       this.getBookList(res.searchQuery);
     });
   }
+  getDescription(description: string) {
+    if (description.length > 80) {
+      return `${description.slice(0,77)}...`
+    }else {
+      return description
+    }
+  }
 }

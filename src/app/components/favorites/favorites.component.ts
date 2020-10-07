@@ -27,4 +27,11 @@ export class FavoritesComponent implements OnInit {
   bookIsFavorite(id: string): boolean {
     return this._bookService.bookIsFavorite(id);
   }
+  getDescription(description: string) {
+    if (description.length > 80) {
+      return `${description.slice(0, 77)}...`;
+    } else {
+      return description;
+    }
+  }
 }

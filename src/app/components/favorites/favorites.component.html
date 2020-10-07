@@ -8,7 +8,7 @@
     <div class="book-card-body">
       <h5>{{ book.volumeInfo.title }}</h5>
       <p *ngIf="book.volumeInfo.description">
-        {{ book.volumeInfo.description.slice(0, 80) }}
+        {{ getDescription(book.volumeInfo.description) }}
       </p>
       <div class="book-card-actions">
         <a
