@@ -1,0 +1,28 @@
+.add-favorite-books-icon {
+  background-color: transparent;
+  border: none;
+  padding: 0.375rem 0.75rem;
+}
+.add-favorite-books-icon:focus {
+  outline: 0;
+}
+.full-width {
+    width: 100%;
+}
+.book-card-img-height {
+  height: 370px;
+}
+.main-link-button {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 8px;
+  text-decoration: none;
+  border-color: #f8f9fa;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: block
+}
+.main-link-button:hover {
+  background-color: #ccc;
+}
