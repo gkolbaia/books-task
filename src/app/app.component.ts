@@ -13,9 +13,10 @@ export class AppComponent implements OnInit {
     this.getQuery();
   }
   searchBook() {
-    if (this.searchQuery && this.searchQuery.length) {
+    console.log(this.searchQuery.trim());
+    if (this.searchQuery && this.searchQuery.trim().length) {
       this._route.navigate([`/home`], {
-        queryParams: { searchQuery: this.searchQuery },
+        queryParams: { searchQuery: this.searchQuery.trim() },
       });
     }
   }
